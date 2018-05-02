@@ -8,6 +8,8 @@ function base() {
   var CHANNEL_ACCESS_TOKEN = ''; //你的Line token
   var email = "@gmail.com"; //你的email(祈禱永遠別收到來自此的e-mail)
   var FolderId = ""; //你的選擇要存的資料夾(google_grive_FolderId)，必須獨立不能共用!，且要為"公開"!
+  var sticker_FolderId = ""; //你可以選擇要存"貼圖"的資料夾的ID，必須獨立不能共用!，且要為"公開"!
+  var sticker_doc = ""; //用來儲存貼圖對應網址的doc
   var gsURL = ""; //該gs檔的發佈網址
   //前期準備完成!==============================================================
   var base_json = {
@@ -19,6 +21,8 @@ function base() {
     "CHANNEL_ACCESS_TOKEN": CHANNEL_ACCESS_TOKEN,
     "email": email,
     "FolderId": FolderId,
+    "sticker_FolderId":sticker_FolderId,
+    "sticker_doc":sticker_doc,
     "gsURL": gsURL
   }
   return base_json

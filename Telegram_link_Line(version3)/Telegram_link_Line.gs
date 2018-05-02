@@ -1661,6 +1661,25 @@ function downloadFromLine(linkId) {
   ch_Name_and_Description()
 }
 //=================================================================================
+function check_sticker_doc(sticker_file_id) {
+  var base_json = base()
+  var CHANNEL_ACCESS_TOKEN = base_json.CHANNEL_ACCESS_TOKEN;
+  var sticker_doc = base_json.sticker_doc
+  var FolderId = base_json.sticker_FolderId;
+  var Folder = DriveApp.getFolderById(FolderId); //sticker_FolderId(貼圖用資料夾)
+
+
+}
+//=================================================================================
+function download_sticker_from_TG(TGDurl) {
+  var base_json = base()
+  var CHANNEL_ACCESS_TOKEN = base_json.CHANNEL_ACCESS_TOKEN;
+  var FolderId = base_json.sticker_FolderId;
+  var Folder = DriveApp.getFolderById(FolderId); //sticker_FolderId(貼圖用資料夾)
+
+
+}
+//=================================================================================
 function get_extension(filename, reciprocal) {
   var extension = filename.split(".")[reciprocal]
   return extension
