@@ -1687,7 +1687,7 @@ function ch_Name_and_Description() {
       file.setDescription(d.getTime());
       //Logger.log("NNNNNNN = ", file.getName())
       break;
-    } else if (get_extension(file.getName(), 1) == 'content') {
+    } else if (get_extension(file.getName(), 0) == 'content') {
       var d = new Date();
       var getFullYear = d.getFullYear(); // 2016 年
       var getMonth = d.getMonth(); // 12 月
